@@ -1,0 +1,83 @@
+.moviedetail-card {
+    position: relative; /* Set position to relative */
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+  }
+  
+  .moviedetail-card img {
+    width: 600px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .moviedetail-details {
+    padding: 20px;
+    
+  }
+  
+  .moviedetail-details h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .moviedetail-details p {
+    margin: 15px 0;
+    
+  }
+  
+  .classificationdetail {
+    position: absolute; /* Position the classification label absolutely */
+    bottom: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  
+  .green {
+    background-color: green;
+    color: white;
+  }
+  
+  .yellow {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .red {
+    background-color: red;
+    color: white;
+  }
+  
+  @media (max-width: 768px) {
+    .moviedetail-card img {
+        width: 100%; /* Take up full width */
+        height: auto;
+        object-fit: cover;
+      }
+    .moviedetail-card {
+      width: 90%; /* Adjust width for smaller screens */
+      margin-left: 5%; /* Adjust margin for centering */
+    }
+  
+    .moviedetail-details h2 {
+      font-size: 20px;
+    }
+  
+    .moviedetail-details p {
+      font-size: 14px;
+    }
+  
+    .classificationdetail {
+      font-size: 14px;
+    }
+  }
