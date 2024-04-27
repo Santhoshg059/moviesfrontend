@@ -10,7 +10,7 @@ function MovieDetails() {
   useEffect(() => {
     const fetchMovieDetails = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/movies/${id}`, {
+        const response = await axios.get(`https://movies-backend-t01n.onrender.com/movies/${id}`, {
           headers: {
             Authorization: 'Bearer FSMovies2023' // Include the Bearer token in the headers
           }

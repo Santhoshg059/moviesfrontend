@@ -13,7 +13,7 @@ function Home() {
     // Fetch movies from backend
     const fetchMovies = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/movies', {
+        const response = await axios.get('https://movies-backend-t01n.onrender.com/movies', {
           headers: {
             Authorization: 'Bearer FSMovies2023' // Include the Bearer token in the headers
           }
